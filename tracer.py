@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -329,7 +329,7 @@ def srgbtorgb(arr):
 
 logger.debug("Loading textures...")
 if SKY_TEXTURE == 'texture':
-    texarr_sky = imio.imread('textures/bgedit.jpg')
+    texarr_sky = spm.imread('textures/bgedit.jpg')
     # must convert to float here so we can work in linear colour
     texarr_sky = texarr_sky.astype(float)
     texarr_sky /= 255.0
@@ -346,9 +346,9 @@ if SKY_TEXTURE == 'texture':
 
 texarr_disk = None
 if DISK_TEXTURE == 'texture':
-    texarr_disk = imio.imread('textures/adisk.jpg')
+    texarr_disk = spm.imread('textures/adisk.jpg')
 if DISK_TEXTURE == 'test':
-    texarr_disk = imio.imread('textures/adisktest.jpg')
+    texarr_disk = spm.imread('textures/adisktest.jpg')
 if texarr_disk is not None:
     # must convert to float here so we can work in linear colour
     texarr_disk = texarr_disk.astype(float)

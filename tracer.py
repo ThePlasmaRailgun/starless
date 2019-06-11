@@ -6,7 +6,6 @@ import scipy.ndimage as ndim
 import scipy.misc as spm
 import random,sys,time,os
 import datetime
-import imageio as imio
 
 import multiprocessing as multi
 import ctypes
